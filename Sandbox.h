@@ -22,7 +22,7 @@ public:
 #pragma region Piston
                         // Crosshead Arm
                         b2PolygonShape shape;
-                        shape.SetAsBox(1.0f, 0.28125f);
+                        shape.SetAsBox(1.0f, 1.125f);
                         b2BodyDef bd;
                         bd.type = b2_dynamicBody;
                         bd.position.Set(3.0f, 6.875f);
@@ -497,7 +497,7 @@ public:
                         m_world->CreateJoint(&rjd);
 #pragma endregion
  
-                        carriage->SetLinearVelocity(b2Vec2(20, 0));
+                        carriage->SetLinearVelocity(b2Vec2(10, 0));
                 }
  
         }
